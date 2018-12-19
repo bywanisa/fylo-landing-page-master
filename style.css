@@ -1,0 +1,176 @@
+body {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background: hsl(218, 28%, 13%);
+}
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+    background: hsl(217, 28%, 15%)
+}
+nav ul {
+    float: right;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+}
+.intro {
+    background: hsl(217, 28%, 15%) url(/fylo-landing-page-master/images/bg-curvy-desktop.svg) no-repeat bottom;
+    margin-bottom: 100px;
+}
+.intro .intro-img {
+    text-align: center
+}
+.intro .intro-content {
+    text-align: center;
+    line-height: 1.4;
+}
+button {
+    background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    width: 250px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button:hover {
+    /*background: linear-gradient(90deg, hsl(198, 60%, 50%), hsl(176, 68%, 64%));*/
+    background: linear-gradient(90deg, hsl(198, 60%, 50%), hsl(78, 96%, 78%));
+}
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px 100px;
+    text-align: center;
+}
+.main .box {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 80px;
+}
+.product .img {
+    width: 100%;
+}
+.product .content {
+    padding: 80px;
+}
+.testimonials {
+    margin: 0px 80px;
+    padding-bottom: 300px;
+}
+.testimonials i {
+    font-size: 4.5em;
+    color: hsl(176, 68%, 64%);
+}
+.testimonials .users {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.users .user {
+    padding: 30px 20px;
+    margin: 0px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: 10px 10px 15px hsl(216, 53%, 9%);
+}
+.user .user-profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+.user .user-profile img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+.sign-up-container {
+    position: relative;
+}
+.sign-up-container .sign-up {
+    position: absolute;
+    bottom: -130px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 60%;
+    padding: 40px 60px;
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px hsl(216, 53%, 9%);
+}
+.sign-up p {
+    margin: 30px 0px;
+}
+.sign-up input {
+    width: 350px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.sign-up button {
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+}
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 200px 50px 50px 50px;
+    margin: 0px;
+}
+footer .footer {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 3fr 1.5fr;
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+.footer .about {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.footer .about i {
+    padding-top: 20px;
+}
+/*.footer .about p, .footer .contact p {
+    margin-top: 0px;
+}*/
+.footer .bottom-nav ul {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 50% 50%;
+}
+.footer .bottom-nav ul li {
+    padding-bottom: 7px;
+    padding-right: 0px;
+}
+.footer .social {
+    font-size: 18px;
+    padding-top: 15px;
+}
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.product .content a {
+    color: hsl(176, 68%, 64%);
+    text-decoration: underline;
+}
+.product .content a:hover {
+    color: hsl(198, 60%, 50%);
+    text-decoration: underline;
+}
