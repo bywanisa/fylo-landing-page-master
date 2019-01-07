@@ -3,7 +3,7 @@
 
 <head>
     <title>Fylo</title>
-    <link rel="stylesheet" href="/fylo-landing-page-master/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
@@ -12,22 +12,31 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/logo.svg" alt="Fylo-logo">
+            <img src="/images/logo.svg" alt="Fylo-logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a id="openBtn" href="#">Sign In</a></li>
             </ul>
         </nav>
     </header>
+    <section>
+        <div id="sign-up">
+            <h2>Sign In</h2>
+            <input type="text" placeholder="   Username">
+            <input type="text" placeholder="   Password">
+            <button>Sign In</button>
+            <small>Forgot Password?</small>
+        </div>
+    </section>
     <main>
         <div class="intro">
             <div class="intro-img">
-                <img src="/fylo-landing-page-master/images/illustration-intro.png" alt="intro">
+                <img src="images/illustration-intro.png" alt="intro">
             </div>
-            <div class="intro-content">
+            <div id="features" class="intro-content">
                 <h1>All your files in one secure location,<br>accessible anywhere.</h1>
                 <p>Fylo stores all your most important files in one secure location.<br>Access them wherever you need,<br>share
                     and collaborate with friends family, and co-workers.</p>
@@ -36,25 +45,25 @@
         </div>
         <div class="main">
             <div class="box box1">
-                <img src="/fylo-landing-page-master/images/icon-access-anywhere.svg" alt="">
+                <img src="images/icon-access-anywhere.svg" alt="">
                 <h3>Access your files, anywhere</h3>
                 <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow
                     you everywhere.</p>
             </div>
             <div class="box box2">
-                <img src="/fylo-landing-page-master/images/icon-security.svg" alt="">
+                <img src="images/icon-security.svg" alt="">
                 <h3>Security you can trust</h3>
                 <p>2-factor authentication and user-controlled encryption are just a couple of the security features we
                     allow to help secure your files.</p>
             </div>
             <div class="box box3">
-                <img src="/fylo-landing-page-master/images/icon-collaboration.svg" alt="">
+                <img src="images/icon-collaboration.svg" alt="">
                 <h3>Real-time collaboration</h3>
                 <p>Securely share files and folders with friends, family and colleagues for live collaboration. No
                     email attachments required.</p>
             </div>
             <div class="box box4">
-                <img src="/fylo-landing-page-master/images/icon-any-file.svg" alt="">
+                <img src="images/icon-any-file.svg" alt="">
                 <h3>Store any type of file</h3>
                 <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file
                     types to be securely stored and shared.</p>
@@ -62,10 +71,10 @@
         </div>
         <div class="product">
             <div class="img">
-                <img src="/fylo-landing-page-master/images/illustration-stay-productive.png" alt="stay-productive">
+                <img src="images/illustration-stay-productive.png" alt="stay-productive">
             </div>
             <div class="content">
-                <h1>Stay productive,<br>wherever you are</h1>
+                <h1>Stay productive, wherever you are</h1>
                 <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
                     storage needs.</p>
                 <p>Securely share files and folders with friends, family and colleagues for live collaboration. No
@@ -73,14 +82,14 @@
                 <a href="#">See how Fylo works <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
-        <div class="testimonials">
+        <div id="team" class="testimonials">
             <i class="fas fa-quote-left"></i>
             <div class="users">
                 <div class="user">
                     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
                         team has become a well-oiled collaboration machine.</p>
                     <div class="user-profile">
-                        <img src="/fylo-landing-page-master/images/profile-1.jpg" alt="user1">
+                        <img src="images/profile-1.jpg" alt="user1">
                         <p><b>Satish Patel</b> <br> <small>Founder & CEO, Huddle</small></p>
                     </div>
                 </div>
@@ -88,7 +97,7 @@
                     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
                         team has become a well-oiled collaboration machine.</p>
                     <div class="user-profile">
-                        <img src="/fylo-landing-page-master/images/profile-2.jpg" alt="user1">
+                        <img src="images/profile-2.jpg" alt="user1">
                         <p><b>Bruce McKenzie</b> <br> <small>Founder & CEO, Huddle</small></p>
                     </div>
                 </div>
@@ -96,7 +105,7 @@
                     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
                         team has become a well-oiled collaboration machine.</p>
                     <div class="user-profile">
-                        <img src="/fylo-landing-page-master/images/profile-3.jpg" alt="user1">
+                        <img src="images/profile-3.jpg" alt="user1">
                         <p><b>Iva Boyd</b> <br> <small>Founder & CEO, Huddle</small></p>
                     </div>
                 </div>
@@ -112,7 +121,7 @@
             </div>
         </div>
         <footer>
-            <img src="/fylo-landing-page-master/images/logo.svg" alt="Fylo-logo">
+            <img src="images/logo.svg" alt="Fylo-logo">
             <div class="footer">
                 <div class="about">
                     <i class="fas fa-map-marker-alt marker"></i>
@@ -125,13 +134,27 @@
                 </div>
                 <div class="bottom-nav">
                     <ul>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Jobs</li>
-                        <li>Terms</li>
-                        <li>Press</li>
-                        <li>Privacy</li>
-                        <li>Blog</li>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Jobs</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms</li>
+                        </a>
+                        <a href="#">
+                            <li>Press</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="social">
@@ -139,9 +162,21 @@
                     <a href="#"><i class="fab fa-twitter-square"></i></a>&nbsp;
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                </div>
+            </div>
         </footer>
     </main>
+    <script>
+        var signIn = document.querySelector('section');
+        var btn = document.getElementById('openBtn');
+        btn.onclick = function () {
+            signIn.style.display = 'block';
+        }
+        window.onclick = function (event) {
+            if (event.target == signIn) {
+                signIn.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

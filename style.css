@@ -2,12 +2,17 @@ body {
     font-family: 'Raleway', 'Open Sans', sans-serif;
     color: hsl(0, 0%, 100%);
     background: hsl(218, 28%, 13%);
+    position: relative;
+    width: 100%;
 }
 header {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 40px;
     background: hsl(217, 28%, 15%)
+}
+header #logo img {
+    max-width: 100%;
 }
 nav ul {
     float: right;
@@ -18,15 +23,20 @@ ul li {
     margin: 0px 30px;
 }
 .intro {
-    background: hsl(217, 28%, 15%) url(/fylo-landing-page-master/images/bg-curvy-desktop.svg) no-repeat bottom;
+    background: hsl(217, 28%, 15%) url(images/bg-curvy-desktop.svg) no-repeat bottom;
     margin-bottom: 100px;
 }
 .intro .intro-img {
-    text-align: center
+    text-align: center;
+}
+.intro .intro-img img{
+    max-width: 100%;
+    height: auto;
 }
 .intro .intro-content {
     text-align: center;
     line-height: 1.4;
+    padding-top: 10px;
 }
 button {
     background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
@@ -39,8 +49,8 @@ button {
     cursor: pointer;
 }
 button:hover {
-    /*background: linear-gradient(90deg, hsl(198, 60%, 50%), hsl(176, 68%, 64%));*/
     background: linear-gradient(90deg, hsl(198, 60%, 50%), hsl(78, 96%, 78%));
+    transform: scale(1.05);
 }
 .main {
     display: grid;
@@ -58,7 +68,7 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     margin: 40px 80px;
 }
-.product .img {
+.product .img img {
     width: 100%;
 }
 .product .content {
@@ -124,6 +134,7 @@ button:hover {
     padding: 10px;
     font-size: 14px;
     width: 200px;
+    margin: 0px auto;
 }
 footer {
     background-color: hsl(216, 53%, 9%);
@@ -173,4 +184,114 @@ a:hover {
 .product .content a:hover {
     color: hsl(198, 60%, 50%);
     text-decoration: underline;
+}
+section {
+    position: fixed;
+    display: none;
+    width: 100%;
+}
+#sign-up {
+    display: block;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    width: 30%;
+}
+#sign-up * {
+    display: block;
+    margin: 10px auto;
+}
+section small, section h2 {
+    color: hsl(216, 53%, 9%);
+}
+section input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #bbb;
+    border-radius: 50px;
+    background-color: #ddd;
+}
+section button {
+    padding: 10px;
+    font-size: 14px;
+    width: 150px;
+    margin: auto;
+}
+@media all and (max-width: 768px) {
+    header {
+        grid-template-columns: 30% 70%;
+        padding: 20px 10px;
+    }
+    ul li {
+        display: inline;
+        margin: 0px 5px;
+    }
+    .intro {
+        margin-bottom: 50px;
+    }
+    .main {
+        display: block;
+        padding: 10px;
+        margin: 15px 30px;
+    }
+    .product {
+        display: block;
+        margin: 20px 30px;
+    }
+    .product .content {
+        padding: 40px;
+    }
+    .testimonials .users {
+        display: block;
+        margin: 0px 20px;
+    }
+    .users .user {
+        padding: 15px 20px;
+        margin: 0px 0px 50px 0px;
+    }
+    .sign-up input {
+        width: 100%;
+        height: 30px;
+        margin-right: 0px;
+    }
+    .sign-up button {
+        margin: 10px auto;
+    }
+    footer .footer {
+        display: block;
+        margin-top: 20px;
+    }
+    .footer .bottom-nav ul {
+        display: block;
+        padding: 0;
+    }
+    .footer .bottom-nav ul li {
+        display: block;
+    }
+    #sign-up {
+        width: 60%;
+    }
+    #sign-up input {
+        width: 100%;
+    }
+    #sign-up button {
+        width: 80%;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+    ul li {
+        margin: 0px 20px;
+    }
+    .sign-up button {
+        margin: 10px auto;
+    }
+    .footer .bottom-nav ul {
+        display: block;
+        padding: 0;
+    }
+    .footer .bottom-nav ul li {
+        display: block;
+    } 
 }
